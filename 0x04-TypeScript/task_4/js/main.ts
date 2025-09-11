@@ -1,14 +1,14 @@
-import { Subjects } from './subjects/Subject';
-import * as CppModule from './subjects/Cpp';
-import * as JavaModule from './subjects/Java';
-import * as ReactModule from './subjects/React';
+import { Cpp } from './subjects/Cpp';
+import { Java } from './subjects/Java';
+import { React } from './subjects/React';
+import { Teacher } from './subjects/Subject';
 
 // Create and export constants
-export const cpp = new CppModule.Subjects.Cpp();
-export const java = new JavaModule.Subjects.Java();
-export const react = new ReactModule.Subjects.React();
+export const cpp = new Cpp();
+export const java = new Java();
+export const react = new React();
 
-export const cTeacher: CppModule.Subjects.Teacher = { firstName: 'C', lastName: 'Teacher', experienceTeachingC: 10 };
+export const cTeacher: Teacher & { experienceTeachingC?: number } = { firstName: 'C', lastName: 'Teacher', experienceTeachingC: 10 };
 
 console.log('C++');
 cpp.setTeacher(cTeacher);

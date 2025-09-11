@@ -1,19 +1,20 @@
-export namespace Subjects {
-  // declaration merging: add optional experienceTeachingC
-  export interface Teacher {
+import { Subject } from './Subject';
+
+declare module './Subject' {
+  interface Teacher {
     experienceTeachingC?: number;
   }
+}
 
-  export class Cpp extends Subject {
-    getRequirements(): string {
-      return 'Here is the list of requirements for Cpp';
-    }
+export class Cpp extends Subject {
+  getRequirements(): string {
+    return 'Here is the list of requirements for Cpp';
+  }
 
-    getAvailableTeacher(): string {
-      if (!this.teacher || this.teacher.experienceTeachingC === undefined || this.teacher.experienceTeachingC <= 0) {
-        return 'No available teacher';
-      }
-      return `Available Teacher: ${this.teacher.firstName}`;
+  getAvailableTeacher(): string {
+    if (!this.teacher || (this.teacher as any).experienceTeachingC === undefined || (this.teacher as any).experienceTeachingC <= 0) {
+      return 'No available teacher';
     }
+    return `Available Teacher: ${this.teacher!.firstName}`;
   }
 }
