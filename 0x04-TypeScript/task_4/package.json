@@ -1,0 +1,7 @@
+{
+  "name": "task_4",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo \"task_4 build\""
+  }
+}
