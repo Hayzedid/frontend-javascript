@@ -1,4 +1,4 @@
-interface Student {
+export interface Student {
   firstName: string;
   lastName: string;
   age: number;
@@ -33,3 +33,5 @@ table.appendChild(tbody);
 if (typeof document !== 'undefined' && document.body) {
   document.body.appendChild(table);
 }
+
+export { studentsList };

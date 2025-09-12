@@ -54,4 +54,5 @@ class StudentClass implements StudentClassInterface {
 }
 
 // Exports for potential tests
-export { Teacher, Directors, printTeacher, StudentClass }; 
+export { Teacher, Directors, printTeacher, StudentClass };
+export { Teacher };
