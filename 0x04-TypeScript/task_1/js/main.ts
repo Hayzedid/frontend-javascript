@@ -1,6 +1,6 @@
 // Task 1: Teacher interface, Directors extension, printTeacher, StudentClass
 
-interface Teacher {
+export interface Teacher {
   readonly firstName: string;
   readonly lastName: string;
   fullTimeEmployee: boolean;
@@ -54,5 +54,4 @@ class StudentClass implements StudentClassInterface {
 }
 
 // Exports for potential tests
-export { Teacher, Directors, printTeacher, StudentClass };
-export { Teacher };
+export { Directors, printTeacher, StudentClass };
