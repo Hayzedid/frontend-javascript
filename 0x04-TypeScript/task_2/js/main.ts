@@ -48,7 +48,7 @@ function createEmployee(salary: number | string): Director | Teacher {
   return new Director();
 }
 
-function isDirector(employee: Director | Teacher): employee is Director {
+export function isDirector(employee: Director | Teacher): employee is Director {
   return (employee as Director).workDirectorTasks !== undefined;
 }
 
@@ -75,4 +75,4 @@ const teacher = new Teacher();
 console.log(executeWork(director)); // Getting to director tasks
 console.log(executeWork(teacher)); // Getting to work
 
-export { Director, Teacher, createEmployee, isDirector, executeWork, teachClass, Subjects };
+export { Director, Teacher, createEmployee, executeWork, teachClass, Subjects };
