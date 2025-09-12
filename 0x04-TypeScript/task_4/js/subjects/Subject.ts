@@ -1,13 +1,9 @@
-// Base Teacher interface (will be augmented in other files)
-export interface Teacher {
-  firstName: string;
-  lastName: string;
-}
+namespace Subjects {
+  export class Subject {
+    teacher?: Teacher;
 
-export class Subject {
-  teacher?: Teacher;
-
-  setTeacher(teacher: Teacher) {
-    this.teacher = teacher;
+    setTeacher(teacher: Teacher): void {
+      this.teacher = teacher;
+    }
   }
 }
