@@ -68,4 +68,11 @@ function teachClass(todayClass: Subjects): string {
   return 'Teaching History';
 }
 
+// Example usage
+const director = new Director();
+const teacher = new Teacher();
+
+console.log(executeWork(director)); // Getting to director tasks
+console.log(executeWork(teacher)); // Getting to work
+
 export { Director, Teacher, createEmployee, isDirector, executeWork, teachClass, Subjects };
