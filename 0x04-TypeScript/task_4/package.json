@@ -1,13 +1,17 @@
 {
   "name": "task_4",
   "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "ts-loader": "^9.5.4",
-    "typescript": "^5.9.2",
-    "webpack": "^5.101.3",
-    "webpack-cli": "^6.0.1"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.4.0",
+    "@typescript-eslint/parser": "^2.4.0",
+    "typescript": "^3.6.4"
   }
 }
