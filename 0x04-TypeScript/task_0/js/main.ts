@@ -21,17 +21,12 @@ studentsList.forEach((s: Student) => {
 
   tdName.textContent = s.firstName;
   tdLocation.textContent = s.location;
-
   tr.appendChild(tdName);
   tr.appendChild(tdLocation);
   tbody.appendChild(tr);
 });
 
 table.appendChild(tbody);
-
-// Attach to body if running in browser environment
-if (typeof document !== 'undefined' && document.body) {
-  document.body.appendChild(table);
-}
+document.body.appendChild(table);
 
 export { studentsList };
