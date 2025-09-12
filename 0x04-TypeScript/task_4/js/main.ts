@@ -8,7 +8,7 @@ export const cpp = new Cpp();
 export const java = new Java();
 export const react = new React();
 
-export const cTeacher = { firstName: 'John', lastName: 'Doe', experienceTeachingC: 10 };
+export const cTeacher: Teacher = { firstName: 'John', lastName: 'Doe', experienceTeachingC: 10 };
 
 console.log('C++');
 cpp.setTeacher(cTeacher);
