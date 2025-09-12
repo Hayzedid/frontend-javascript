@@ -64,8 +64,11 @@ function executeWork(employee: Director | Teacher): string {
 type Subjects = 'Math' | 'History';
 
 function teachClass(todayClass: Subjects): string {
-  if (todayClass === 'Math') return 'Teaching Math';
-  return 'Teaching History';
+  if (todayClass === 'Math') {
+    return 'Teaching Math';
+  } else {
+    return 'Teaching History';
+  }
 }
 
 // Example usage
@@ -74,5 +77,7 @@ const teacher = new Teacher();
 
 console.log(executeWork(director)); // Getting to director tasks
 console.log(executeWork(teacher)); // Getting to work
+console.log(teachClass('Math')); // Teaching Math
+console.log(teachClass('History')); // Teaching History
 
 export { Director, Teacher, createEmployee, executeWork, teachClass, Subjects };
